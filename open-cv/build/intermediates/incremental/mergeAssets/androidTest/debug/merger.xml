@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="debug"><source path="/home/walpurisnacht/AndroidStudioProjects/OpenCV_AS/open-cv/build/intermediates/bundles/debug/assets"/></dataSet><dataSet config="main"><source path="/home/walpurisnacht/AndroidStudioProjects/OpenCV_AS/open-cv/src/androidTest/assets"/></dataSet></merger>
+<merger version="3"><dataSet config="debug"><source path="/home/walpurisnacht/Project Gesture/OpenCV/open-cv/build/intermediates/bundles/debug/assets"/></dataSet><dataSet config="main"><source path="/home/walpurisnacht/Project Gesture/OpenCV/open-cv/src/androidTest/assets"/></dataSet></merger>

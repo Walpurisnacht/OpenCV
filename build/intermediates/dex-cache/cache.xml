@@ -2,39 +2,39 @@
 <items version="2" >
 
     <item
-        jar="/home/walpurisnacht/AndroidStudioProjects/OpenCV_AS/app/build/intermediates/exploded-aar/OpenCV_AS/open-cv/unspecified/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="d3cdf33df322ba69b23b5a2377955be4eca01b89">
-        <dex dex="/home/walpurisnacht/AndroidStudioProjects/OpenCV_AS/app/build/intermediates/pre-dexed/release/classes-95c4ec0fc5a29200616bae3eeeba908266f8b9f1.jar" />
-    </item>
-    <item
-        jar="/home/walpurisnacht/AndroidStudioProjects/OpenCV_AS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/jars/classes.jar"
+        jar="/home/walpurisnacht/Project Gesture/OpenCV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
-        <dex dex="/home/walpurisnacht/AndroidStudioProjects/OpenCV_AS/app/build/intermediates/pre-dexed/release/classes-73e833f3a8420b11739df694507def49d9a5e125.jar" />
+        <dex dex="/home/walpurisnacht/Project Gesture/OpenCV/app/build/intermediates/pre-dexed/debug/classes-93fb08684a64f08583e7bea4eb14e156ca4aa961.jar" />
     </item>
     <item
-        jar="/home/walpurisnacht/AndroidStudioProjects/OpenCV_AS/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/libs/internal_impl-23.1.0.jar"
+        jar="/home/walpurisnacht/Project Gesture/OpenCV/app/build/intermediates/exploded-aar/OpenCV/open-cv/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="f0385a8a90676f41db88c2c62fa7b13050213f9b">
+        <dex dex="/home/walpurisnacht/Project Gesture/OpenCV/app/build/intermediates/pre-dexed/debug/classes-114ac852d3aa6d8870ee75186fc77b782e0be4a1.jar" />
+    </item>
+    <item
+        jar="/home/walpurisnacht/Project Gesture/OpenCV/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/libs/internal_impl-23.1.0.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
-        <dex dex="/home/walpurisnacht/AndroidStudioProjects/OpenCV_AS/app/build/intermediates/pre-dexed/release/internal_impl-23.1.0-07ae776ec1ee103b3af10739f0d7987aa0c71684.jar" />
+        <dex dex="/home/walpurisnacht/Project Gesture/OpenCV/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.0-d406be1de8302f4758deb1e0ad201518be5eaf55.jar" />
+    </item>
+    <item
+        jar="/home/walpurisnacht/Project Gesture/OpenCV/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
+        <dex dex="/home/walpurisnacht/Project Gesture/OpenCV/app/build/intermediates/pre-dexed/debug/classes-781334330b7f57236073a4941a85106f8cfb6e7e.jar" />
     </item>
     <item
         jar="/home/walpurisnacht/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.0/support-annotations-23.1.0.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="92e3fc113ec3ee36b64603a38857b95700025633">
-        <dex dex="/home/walpurisnacht/AndroidStudioProjects/OpenCV_AS/app/build/intermediates/pre-dexed/release/support-annotations-23.1.0-c51a24dfa6901241b1858644a4cf0b0175b01989.jar" />
-    </item>
-    <item
-        jar="/home/walpurisnacht/AndroidStudioProjects/OpenCV_AS/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
-        <dex dex="/home/walpurisnacht/AndroidStudioProjects/OpenCV_AS/app/build/intermediates/pre-dexed/release/classes-a25b256acc500cd67fbef62a400691d0feef88f2.jar" />
+        <dex dex="/home/walpurisnacht/Project Gesture/OpenCV/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.0-c51a24dfa6901241b1858644a4cf0b0175b01989.jar" />
     </item>
 
 </items>

@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: /home/walpurisnacht/AndroidStudioProjects/OpenCV_AS/open-cv/src/main/aidl/org/opencv/engine/OpenCVEngineInterface.aidl
+ * Original file: /home/walpurisnacht/Project Gesture/OpenCV/open-cv/src/main/aidl/org/opencv/engine/OpenCVEngineInterface.aidl
  */
 package org.opencv.engine;
 /**
