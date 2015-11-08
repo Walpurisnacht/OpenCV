@@ -2,6 +2,7 @@ package com.example.walpurisnacht.opencv_as;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.text.method.ScrollingMovementMethod;
 import android.view.View;
@@ -15,6 +16,7 @@ import org.opencv.core.CvType;
 import org.opencv.core.Mat;
 import org.opencv.ml.Ml;
 import org.opencv.ml.SVM;
+import org.w3c.dom.NodeList;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -28,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
     private boolean Debug = false;
 
     private String predict = null;
-    private String m_chosen = null;
 
     private Mat m_digit;
     private Mat m_target;
@@ -212,6 +213,7 @@ public class MainActivity extends AppCompatActivity {
         SimpleFileDialog FileOpenDialog =  new SimpleFileDialog(MainActivity.this, "FileOpen",
                 new SimpleFileDialog.SimpleFileDialogListener()
                 {
+                    String m_chosen;
                     @Override
                     public void onChosenDir(String chosenDir)
                     {
@@ -245,6 +247,9 @@ public class MainActivity extends AppCompatActivity {
 
                         MatParser(text.toString());
                         TrainMat();
+
+                        textView = (TextView) findViewById(R.id.textView);
+                        textView.setText(String.valueOf(svm_train.getSupportVectors().rows()));
                     }
                 });
 
@@ -252,6 +257,61 @@ public class MainActivity extends AppCompatActivity {
         FileOpenDialog.Default_File_Name = "";
         FileOpenDialog.chooseFile_or_Dir();
 
+    }
 
+    public void saveClick(View view) {
+//        SimpleFileDialog FileSaveDialog =  new SimpleFileDialog(MainActivity.this, "FileSave",
+//                new SimpleFileDialog.SimpleFileDialogListener()
+//                {
+//                    String m_chosen;
+//                    @Override
+//                    public void onChosenDir(String chosenDir)
+//                    {
+//                        // The code in this function will be executed when the dialog OK button is pushed
+//                        m_chosen = chosenDir;
+//                        Toast.makeText(MainActivity.this, "Chosen FileOpenDialog File: " +
+//                                m_chosen, Toast.LENGTH_LONG).show();
+//
+//                        svm_train.save(m_chosen);
+//                    }
+//                });
+//
+//        //You can change the default filename using the public variable "Default_File_Name"
+//        FileSaveDialog.Default_File_Name = "";
+//        FileSaveDialog.chooseFile_or_Dir();
+//
+//        /////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+        File model = new File(Environment.getExternalStorageDirectory(),"model.xml");
+        svm_train.save(model.getAbsolutePath());
+    }
+
+    public void loadClick(View view) {
+        /////////////////////////////////////////////////////////////////////////////////////////////////
+        //Create FileOpenDialog and register a callback
+        /////////////////////////////////////////////////////////////////////////////////////////////////
+        SimpleFileDialog FileOpenDialog =  new SimpleFileDialog(MainActivity.this, "FileOpen",
+                new SimpleFileDialog.SimpleFileDialogListener()
+                {
+                    String m_chosen;
+                    @Override
+                    public void onChosenDir(String chosenDir)
+                    {
+                        // The code in this function will be executed when the dialog OK button is pushed
+                        m_chosen = chosenDir;
+                        Toast.makeText(MainActivity.this, "Chosen FileOpenDialog File: " +
+                                m_chosen, Toast.LENGTH_LONG).show();
+
+
+                        NodeList nodeList =
+                    }
+                });
+
+        //You can change the default filename using the public variable "Default_File_Name"
+        FileOpenDialog.Default_File_Name = "";
+        FileOpenDialog.chooseFile_or_Dir();
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////
     }
 }
